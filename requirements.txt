@@ -1,0 +1,20 @@
+langchain
+langchain-community
+langchain-experimental
+sentence-transformers
+torch
+transformers
+
+# PDF için
+PyMuPDF
+requests
+
+# Veri işleme ve analiz
+numpy
+beautifulsoup4
+
+# Web scraping
+urllib3
+
+
+streamlit

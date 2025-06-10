@@ -1,0 +1,1514 @@
+{
+  "nodes": {
+    "papers": [
+      {
+        "id": "paper_d68e3573",
+        "name": "AutoAgent: A Fully-Automated and Zero-Code Framework for LLM Agents",
+        "arxiv_link": "https://arxiv.org/pdf/2502.05957v2.pdf",
+        "abstract": "Large Language Model (LLM) Agents have demonstrated remarkable capabilities in task automation and intelligent decision-making, driving the widespread adoption of agent development frameworks such as LangChain and AutoGen. However, these frameworks predominantly serve developers with extensive technical expertise - a significant limitation considering that only 0.03 % of the global population possesses the necessary programming skills. This stark accessibility gap raises a fundamental question: Can we enable everyone, regardless of technical background, to build their own LLM agents using natural language alone? To address this challenge, we introduce AutoAgent-a Fully-Automated and highly Self-Developing framework that enables users to create and deploy LLM agents through Natural Language Alone. Operating as an autonomous Agent Operating System, AutoAgent comprises four key components: i) Agentic System Utilities, ii) LLM-powered Actionable Engine, iii) Self-Managing File System, and iv) Self-Play Agent Customization module. This lightweight yet powerful system enables efficient and dynamic creation and modification of tools, agents, and workflows without coding requirements or manual intervention. Beyond its code-free agent development capabilities, AutoAgent also serves as a versatile multi-agent system for General AI Assistants. Comprehensive evaluations on the GAIA benchmark demonstrate AutoAgent's effectiveness in generalist multi-agent tasks, surpassing existing state-of-the-art methods. Furthermore, AutoAgent's Retrieval-Augmented Generation (RAG)-related capabilities have shown consistently superior performance compared to many alternative LLM-based solutions.",
+        "arxiv_id": "2502.05957v2",
+        "pwc_link": "https://paperswithcode.com/paper/autoagent-a-fully-automated-and-zero-code",
+        "publication_date": "9 Feb 2025"
+      },
+      {
+        "id": "paper_21bea824",
+        "name": "ChartGalaxy: A Dataset for Infographic Chart Understanding and Generation",
+        "arxiv_link": "https://arxiv.org/pdf/2505.18668v1.pdf",
+        "abstract": "Infographic charts are a powerful medium for communicating abstract data by combining visual elements (e.g., charts, images) with textual information. However, their visual and structural richness poses challenges for large vision-language models (LVLMs), which are typically trained on plain charts. To bridge this gap, we introduce ChartGalaxy, a million-scale dataset designed to advance the understanding and generation of infographic charts. The dataset is constructed through an inductive process that identifies 75 chart types, 330 chart variations, and 68 layout templates from real infographic charts and uses them to create synthetic ones programmatically. We showcase the utility of this dataset through: 1) improving infographic chart understanding via fine-tuning, 2) benchmarking code generation for infographic charts, and 3) enabling example-based infographic chart generation. By capturing the visual and structural complexity of real design, ChartGalaxy provides a useful resource for enhancing multimodal reasoning and generation in LVLMs.",
+        "arxiv_id": "2505.18668v1",
+        "pwc_link": "https://paperswithcode.com/paper/chartgalaxy-a-dataset-for-infographic-chart",
+        "publication_date": "24 May 2025"
+      },
+      {
+        "id": "paper_5e5c730a",
+        "name": "CheXGenBench: A Unified Benchmark For Fidelity, Privacy and Utility of Synthetic Chest Radiographs",
+        "arxiv_link": "https://arxiv.org/pdf/2505.10496v1.pdf",
+        "abstract": "We introduce CheXGenBench, a rigorous and multifaceted evaluation framework for synthetic chest radiograph generation that simultaneously assesses fidelity, privacy risks, and clinical utility across state-of-the-art text-to-image generative models. Despite rapid advancements in generative AI for real-world imagery, medical domain evaluations have been hindered by methodological inconsistencies, outdated architectural comparisons, and disconnected assessment criteria that rarely address the practical clinical value of synthetic samples. CheXGenBench overcomes these limitations through standardised data partitioning and a unified evaluation protocol comprising over 20 quantitative metrics that systematically analyse generation quality, potential privacy vulnerabilities, and downstream clinical applicability across 11 leading text-to-image architectures. Our results reveal critical inefficiencies in the existing evaluation protocols, particularly in assessing generative fidelity, leading to inconsistent and uninformative comparisons. Our framework establishes a standardised benchmark for the medical AI community, enabling objective and reproducible comparisons while facilitating seamless integration of both existing and future generative models. Additionally, we release a high-quality, synthetic dataset, SynthCheX-75K, comprising 75K radiographs generated by the top-performing model (Sana 0.6B) in our benchmark to support further research in this critical domain. Through CheXGenBench, we establish a new state-of-the-art and release our framework, models, and SynthCheX-75K dataset at https://raman1121.github.io/CheXGenBench/",
+        "arxiv_id": "2505.10496v1",
+        "pwc_link": "https://paperswithcode.com/paper/chexgenbench-a-unified-benchmark-for-fidelity",
+        "publication_date": "15 May 2025"
+      },
+      {
+        "id": "paper_79c0b994",
+        "name": "DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing",
+        "arxiv_link": "https://arxiv.org/pdf/2410.12189v3.pdf",
+        "abstract": "Analyzing unstructured data has been a persistent challenge in data processing. Large Language Models (LLMs) have shown promise in this regard, leading to recent proposals for declarative frameworks for LLM-powered processing of unstructured data. However, these frameworks focus on reducing cost when executing user-specified operations using LLMs, rather than improving accuracy, executing most operations as-is (in a single LLM call). This is problematic for complex tasks and data, where LLM outputs for user-defined operations are often inaccurate, even with optimized prompts. For example, an LLM may struggle to identify {\\em all} instances of specific clauses, like force majeure or indemnification, in lengthy legal documents, requiring decomposition of the data, the task, or both. We present DocETL, a system that optimizes complex document processing pipelines, while accounting for LLM shortcomings. DocETL offers a declarative interface for users to define such pipelines and uses an agent-based approach to automatically optimize them, leveraging novel agent-based rewrites (that we call rewrite directives), as well as an optimization and evaluation framework. We introduce (i) logical rewriting of pipelines, tailored for LLM-based tasks, (ii) an agent-guided plan evaluation mechanism that synthesizes and orchestrates task-specific validation prompts, and (iii) an optimization algorithm that efficiently finds promising plans, considering the latencies of agent-based plan generation and evaluation. Our evaluation on four different unstructured document analysis tasks demonstrates that DocETL finds plans with outputs that are 25 to 80% more accurate than well-engineered baselines, addressing a critical gap in unstructured data analysis. DocETL is open-source at docetl.org, and as of March 2025, has amassed over 1.7k GitHub Stars, with users spanning a variety of domains.",
+        "arxiv_id": "2410.12189v3",
+        "pwc_link": "https://paperswithcode.com/paper/docetl-agentic-query-rewriting-and-evaluation",
+        "publication_date": "16 Oct 2024"
+      },
+      {
+        "id": "paper_d6e07d85",
+        "name": "Impromptu VLA: Open Weights and Open Data for Driving Vision-Language-Action Models",
+        "arxiv_link": "https://arxiv.org/pdf/2505.23757v1.pdf",
+        "abstract": "Vision-Language-Action (VLA) models for autonomous driving show promise but falter in unstructured corner case scenarios, largely due to a scarcity of targeted benchmarks. To address this, we introduce Impromptu VLA. Our core contribution is the Impromptu VLA Dataset: over 80,000 meticulously curated video clips, distilled from over 2M source clips sourced from 8 open-source large-scale datasets. This dataset is built upon our novel taxonomy of four challenging unstructured categories and features rich, planning-oriented question-answering annotations and action trajectories. Crucially, experiments demonstrate that VLAs trained with our dataset achieve substantial performance gains on established benchmarks--improving closed-loop NeuroNCAP scores and collision rates, and reaching near state-of-the-art L2 accuracy in open-loop nuScenes trajectory prediction. Furthermore, our Q&A suite serves as an effective diagnostic, revealing clear VLM improvements in perception, prediction, and planning. Our code, data and models are available at https://github.com/ahydchh/Impromptu-VLA.",
+        "arxiv_id": "2505.23757v1",
+        "pwc_link": "https://paperswithcode.com/paper/impromptu-vla-open-weights-and-open-data-for",
+        "publication_date": "29 May 2025"
+      },
+      {
+        "id": "paper_46e0cb48",
+        "name": "MoonCast: High-Quality Zero-Shot Podcast Generation",
+        "arxiv_link": "https://arxiv.org/pdf/2503.14345v2.pdf",
+        "abstract": "Recent advances in text-to-speech synthesis have achieved notable success in generating high-quality short utterances for individual speakers. However, these systems still face challenges when extending their capabilities to long, multi-speaker, and spontaneous dialogues, typical of real-world scenarios such as podcasts. These limitations arise from two primary challenges: 1) long speech: podcasts typically span several minutes, exceeding the upper limit of most existing work; 2) spontaneity: podcasts are marked by their spontaneous, oral nature, which sharply contrasts with formal, written contexts; existing works often fall short in capturing this spontaneity. In this paper, we propose MoonCast, a solution for high-quality zero-shot podcast generation, aiming to synthesize natural podcast-style speech from text-only sources (e.g., stories, technical reports, news in TXT, PDF, or Web URL formats) using the voices of unseen speakers. To generate long audio, we adopt a long-context language model-based audio modeling approach utilizing large-scale long-context speech data. To enhance spontaneity, we utilize a podcast generation module to generate scripts with spontaneous details, which have been empirically shown to be as crucial as the text-to-speech modeling itself. Experiments demonstrate that MoonCast outperforms baselines, with particularly notable improvements in spontaneity and coherence.",
+        "arxiv_id": "2503.14345v2",
+        "pwc_link": "https://paperswithcode.com/paper/mooncast-high-quality-zero-shot-podcast",
+        "publication_date": "18 Mar 2025"
+      },
+      {
+        "id": "paper_c4ff01ad",
+        "name": "Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning",
+        "arxiv_link": "https://arxiv.org/pdf/2504.17192v3.pdf",
+        "abstract": "Despite the rapid growth of machine learning research, corresponding code implementations are often unavailable, making it slow and labor-intensive for researchers to reproduce results and build upon prior work. In the meantime, recent Large Language Models (LLMs) excel at understanding scientific documents and generating high-quality code. Inspired by this, we introduce PaperCoder, a multi-agent LLM framework that transforms machine learning papers into functional code repositories. PaperCoder operates in three stages: planning, where it constructs a high-level roadmap, designs the system architecture with diagrams, identifies file dependencies, and generates configuration files; analysis, which focuses on interpreting implementation-specific details; and generation, where modular, dependency-aware code is produced. Moreover, each phase is instantiated through a set of specialized agents designed to collaborate effectively across the pipeline. We then evaluate PaperCoder on generating code implementations from machine learning papers based on both model-based and human evaluations, particularly from the authors of those papers, with author-released repositories as ground truth if available. Our results demonstrate the effectiveness of PaperCoder in creating high-quality, faithful implementations. Furthermore, it consistently shows strengths in the recently released PaperBench benchmark, surpassing strong baselines by substantial margins. Code is available at: https://github.com/going-doer/Paper2Code.",
+        "arxiv_id": "2504.17192v3",
+        "pwc_link": "https://paperswithcode.com/paper/paper2code-automating-code-generation-from",
+        "publication_date": "24 Apr 2025"
+      },
+      {
+        "id": "paper_dd341e3b",
+        "name": "Reservoir-enhanced Segment Anything Model for Subsurface Diagnosis",
+        "arxiv_link": "https://arxiv.org/pdf/2504.18802v1.pdf",
+        "abstract": "Urban roads and infrastructure, vital to city operations, face growing threats from subsurface anomalies like cracks and cavities. Ground Penetrating Radar (GPR) effectively visualizes underground conditions employing electromagnetic (EM) waves; however, accurate anomaly detection via GPR remains challenging due to limited labeled data, varying subsurface conditions, and indistinct target boundaries. Although visually image-like, GPR data fundamentally represent EM waves, with variations within and between waves critical for identifying anomalies. Addressing these, we propose the Reservoir-enhanced Segment Anything Model (Res-SAM), an innovative framework exploiting both visual discernibility and wave-changing properties of GPR data. Res-SAM initially identifies apparent candidate anomaly regions given minimal prompts, and further refines them by analyzing anomaly-induced changing information within and between EM waves in local GPR data, enabling precise and complete anomaly region extraction and category determination. Real-world experiments demonstrate that Res-SAM achieves high detection accuracy (>85%) and outperforms state-of-the-art. Notably, Res-SAM requires only minimal accessible non-target data, avoids intensive training, and incorporates simple human interaction to enhance reliability. Our research provides a scalable, resource-efficient solution for rapid subsurface anomaly detection across diverse environments, improving urban safety monitoring while reducing manual effort and computational cost.",
+        "arxiv_id": "2504.18802v1",
+        "pwc_link": "https://paperswithcode.com/paper/reservoir-enhanced-segment-anything-model-for",
+        "publication_date": "26 Apr 2025"
+      },
+      {
+        "id": "paper_ab18e24f",
+        "name": "SoloSpeech: Enhancing Intelligibility and Quality in Target Speech Extraction through a Cascaded Generative Pipeline",
+        "arxiv_link": "https://arxiv.org/pdf/2505.19314v2.pdf",
+        "abstract": "Target Speech Extraction (TSE) aims to isolate a target speaker's voice from a mixture of multiple speakers by leveraging speaker-specific cues, typically provided as auxiliary audio (a.k.a. cue audio). Although recent advancements in TSE have primarily employed discriminative models that offer high perceptual quality, these models often introduce unwanted artifacts, reduce naturalness, and are sensitive to discrepancies between training and testing environments. On the other hand, generative models for TSE lag in perceptual quality and intelligibility. To address these challenges, we present SoloSpeech, a novel cascaded generative pipeline that integrates compression, extraction, reconstruction, and correction processes. SoloSpeech features a speaker-embedding-free target extractor that utilizes conditional information from the cue audio's latent space, aligning it with the mixture audio's latent space to prevent mismatches. Evaluated on the widely-used Libri2Mix dataset, SoloSpeech achieves the new state-of-the-art intelligibility and quality in target speech extraction and speech separation tasks while demonstrating exceptional generalization on out-of-domain data and real-world scenarios.",
+        "arxiv_id": "2505.19314v2",
+        "pwc_link": "https://paperswithcode.com/paper/solospeech-enhancing-intelligibility-and",
+        "publication_date": "25 May 2025"
+      },
+      {
+        "id": "paper_b364d6cc",
+        "name": "WebDancer: Towards Autonomous Information Seeking Agency",
+        "arxiv_link": "https://arxiv.org/pdf/2505.22648v1.pdf",
+        "abstract": "Addressing intricate real-world problems necessitates in-depth information seeking and multi-step reasoning. Recent progress in agentic systems, exemplified by Deep Research, underscores the potential for autonomous multi-step research. In this work, we present a cohesive paradigm for building end-to-end agentic information seeking agents from a data-centric and training-stage perspective. Our approach consists of four key stages: (1) browsing data construction, (2) trajectories sampling, (3) supervised fine-tuning for effective cold start, and (4) reinforcement learning for enhanced generalisation. We instantiate this framework in a web agent based on the ReAct, WebDancer. Empirical evaluations on the challenging information seeking benchmarks, GAIA and WebWalkerQA, demonstrate the strong performance of WebDancer, achieving considerable results and highlighting the efficacy of our training paradigm. Further analysis of agent training provides valuable insights and actionable, systematic pathways for developing more capable agentic models. The codes and demo will be released in https://github.com/Alibaba-NLP/WebAgent.",
+        "arxiv_id": "2505.22648v1",
+        "pwc_link": "https://paperswithcode.com/paper/webdancer-towards-autonomous-information",
+        "publication_date": "28 May 2025"
+      }
+    ],
+    "codes": [
+      {
+        "id": "code_8a642a6b",
+        "name": "hkuds/autoagent",
+        "link": "https://github.com/hkuds/autoagent",
+        "star": 4645
+      },
+      {
+        "id": "code_9e8f235d",
+        "name": "hkuds/auto-deep-research",
+        "link": "https://github.com/hkuds/auto-deep-research",
+        "star": 1001
+      },
+      {
+        "id": "code_d39ad669",
+        "name": "chartgalaxy/chartgalaxy",
+        "link": "https://github.com/chartgalaxy/chartgalaxy",
+        "star": 177
+      },
+      {
+        "id": "code_27fab4dc",
+        "name": "orionbench/orionbench",
+        "link": "https://github.com/orionbench/orionbench",
+        "star": 35
+      },
+      {
+        "id": "code_990e3c03",
+        "name": "cooldawnant/infochartqa",
+        "link": "https://github.com/cooldawnant/infochartqa",
+        "star": 33
+      },
+      {
+        "id": "code_036798f3",
+        "name": "Raman1121/CheXGenBench",
+        "link": "https://github.com/Raman1121/CheXGenBench",
+        "star": 59
+      },
+      {
+        "id": "code_71a49c7b",
+        "name": "ucbepic/docetl",
+        "link": "https://github.com/ucbepic/docetl",
+        "star": 2130
+      },
+      {
+        "id": "code_bd864353",
+        "name": "ahydchh/impromptu-vla",
+        "link": "https://github.com/ahydchh/impromptu-vla",
+        "star": 156
+      },
+      {
+        "id": "code_6e1a77ad",
+        "name": "jzq2000/mooncast",
+        "link": "https://github.com/jzq2000/mooncast",
+        "star": 226
+      },
+      {
+        "id": "code_9f8c5b0b",
+        "name": "going-doer/paper2code",
+        "link": "https://github.com/going-doer/paper2code",
+        "star": 2612
+      },
+      {
+        "id": "code_7c234536",
+        "name": "zhouxr6066/Res-SAM",
+        "link": "https://github.com/zhouxr6066/Res-SAM",
+        "star": 468
+      },
+      {
+        "id": "code_a11a7e54",
+        "name": "wanghelin1997/solospeech",
+        "link": "https://github.com/wanghelin1997/solospeech",
+        "star": 183
+      },
+      {
+        "id": "code_bb19c52b",
+        "name": "alibaba-nlp/webagent",
+        "link": "https://github.com/alibaba-nlp/webagent",
+        "star": 958
+      },
+      {
+        "id": "code_06ad686f",
+        "name": "alibaba-nlp/webwalker",
+        "link": "https://github.com/alibaba-nlp/webwalker",
+        "star": 958
+      }
+    ],
+    "datasets": [
+      {
+        "id": "dataset_105536f8",
+        "name": "InfographicVQA",
+        "link": "https://paperswithcode.com/dataset/infographicvqa"
+      },
+      {
+        "id": "dataset_f58d3dbb",
+        "name": "SynthCheX-75K",
+        "link": "https://paperswithcode.com/dataset/synthchex-75k"
+      },
+      {
+        "id": "dataset_9aa6eadd",
+        "name": "MIMIC-CXR",
+        "link": "https://paperswithcode.com/dataset/mimic-cxr"
+      },
+      {
+        "id": "dataset_374bc60c",
+        "name": "nuScenes",
+        "link": "https://paperswithcode.com/dataset/nuscenes"
+      },
+      {
+        "id": "dataset_57ee7bf5",
+        "name": "Argoverse",
+        "link": "https://paperswithcode.com/dataset/argoverse"
+      },
+      {
+        "id": "dataset_48f4c416",
+        "name": "IDD",
+        "link": "https://paperswithcode.com/dataset/idd"
+      },
+      {
+        "id": "dataset_e2eff6c2",
+        "name": "ONCE",
+        "link": "https://paperswithcode.com/dataset/once"
+      },
+      {
+        "id": "dataset_6a8efccb",
+        "name": "MUSAN",
+        "link": "https://paperswithcode.com/dataset/musan"
+      },
+      {
+        "id": "dataset_3c2df79b",
+        "name": "LibriMix",
+        "link": "https://paperswithcode.com/dataset/librimix"
+      },
+      {
+        "id": "dataset_924a6e61",
+        "name": "WHAM!",
+        "link": "https://paperswithcode.com/dataset/wham"
+      },
+      {
+        "id": "dataset_e2abd049",
+        "name": "CHiME-5",
+        "link": "https://paperswithcode.com/dataset/chime-5"
+      },
+      {
+        "id": "dataset_61f4f34b",
+        "name": "VoiceBank+DEMAND",
+        "link": "https://paperswithcode.com/dataset/voice-bank-demand"
+      },
+      {
+        "id": "dataset_fa44835d",
+        "name": "GAIA",
+        "link": "https://paperswithcode.com/dataset/gaia"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task_7ebedea2",
+        "name": "Large Language Model",
+        "link": "https://paperswithcode.com/task/large-language-model"
+      },
+      {
+        "id": "task_7542dc7e",
+        "name": "RAG",
+        "link": "https://paperswithcode.com/task/rag"
+      },
+      {
+        "id": "task_0c3cb236",
+        "name": "Retrieval-augmented Generation",
+        "link": "https://paperswithcode.com/task/retrieval-augmented-generation"
+      },
+      {
+        "id": "task_a8d7e740",
+        "name": "Benchmarking",
+        "link": "https://paperswithcode.com/task/benchmarking"
+      },
+      {
+        "id": "task_39de6f55",
+        "name": "Chart Understanding",
+        "link": "https://paperswithcode.com/task/chart-understanding"
+      },
+      {
+        "id": "task_c1428964",
+        "name": "Code Generation",
+        "link": "https://paperswithcode.com/task/code-generation"
+      },
+      {
+        "id": "task_5ae98149",
+        "name": "Multimodal Reasoning",
+        "link": "https://paperswithcode.com/task/multimodal-reasoning"
+      },
+      {
+        "id": "task_88295b71",
+        "name": "Conditional Text-to-Image Synthesis",
+        "link": "https://paperswithcode.com/task/conditional-text-to-image-synthesis"
+      },
+      {
+        "id": "task_41858ee9",
+        "name": "Autonomous Driving",
+        "link": "https://paperswithcode.com/task/autonomous-driving"
+      },
+      {
+        "id": "task_1b241505",
+        "name": "Diagnostic",
+        "link": "https://paperswithcode.com/task/diagnostic"
+      },
+      {
+        "id": "task_84338875",
+        "name": "Question Answering",
+        "link": "https://paperswithcode.com/task/question-answering"
+      },
+      {
+        "id": "task_003a4287",
+        "name": "Trajectory Prediction",
+        "link": "https://paperswithcode.com/task/trajectory-prediction"
+      },
+      {
+        "id": "task_10d8cac5",
+        "name": "Vision-Language-Action",
+        "link": "https://paperswithcode.com/task/vision-language-action"
+      },
+      {
+        "id": "task_c1c6bb6d",
+        "name": "Speech Synthesis",
+        "link": "https://paperswithcode.com/task/speech-synthesis"
+      },
+      {
+        "id": "task_38b1fb3e",
+        "name": "text-to-speech",
+        "link": "https://paperswithcode.com/task/text-to-speech-1"
+      },
+      {
+        "id": "task_4a1a9cdc",
+        "name": "Text to Speech",
+        "link": "https://paperswithcode.com/task/text-to-speech"
+      },
+      {
+        "id": "task_6b15bc7b",
+        "name": "Text-To-Speech Synthesis",
+        "link": "https://paperswithcode.com/task/text-to-speech-synthesis"
+      },
+      {
+        "id": "task_a034a8fd",
+        "name": "Anomaly Detection",
+        "link": "https://paperswithcode.com/task/anomaly-detection"
+      },
+      {
+        "id": "task_ebad1f7d",
+        "name": "GPR",
+        "link": "https://paperswithcode.com/task/gpr"
+      },
+      {
+        "id": "task_20f35e63",
+        "name": "model",
+        "link": "https://paperswithcode.com/task/model"
+      },
+      {
+        "id": "task_0f06320d",
+        "name": "Speech Extraction",
+        "link": "https://paperswithcode.com/task/speech-extraction"
+      },
+      {
+        "id": "task_336010cb",
+        "name": "Speech Separation",
+        "link": "https://paperswithcode.com/task/speech-separation"
+      }
+    ],
+    "methods": [
+      {
+        "id": "method_1818d506",
+        "name": "Focus",
+        "link": "https://paperswithcode.com/method/focus"
+      },
+      {
+        "id": "method_8d0b6717",
+        "name": "ADOPT",
+        "link": "https://paperswithcode.com/method/adopt"
+      },
+      {
+        "id": "method_572d4e42",
+        "name": "URL",
+        "link": "https://paperswithcode.com/method/url"
+      },
+      {
+        "id": "method_cdaeeeba",
+        "name": "SET",
+        "link": "https://paperswithcode.com/method/set"
+      }
+    ],
+    "authors": [
+      {
+        "id": "author_92f9a03f",
+        "name": "Jiabin Tang",
+        "link": "https://paperswithcode.com/author/jiabin-tang"
+      },
+      {
+        "id": "author_2b0d34eb",
+        "name": "Tianyu Fan",
+        "link": "https://paperswithcode.com/author/tianyu-fan"
+      },
+      {
+        "id": "author_5a03e69a",
+        "name": "Chao Huang",
+        "link": "https://paperswithcode.com/author/chao-huang"
+      },
+      {
+        "id": "author_6caff28d",
+        "name": "Zhen Li",
+        "link": "https://paperswithcode.com/author/zhen-li"
+      },
+      {
+        "id": "author_978b8c1b",
+        "name": "Yukai Guo",
+        "link": "https://paperswithcode.com/author/yukai-guo"
+      },
+      {
+        "id": "author_7fd66009",
+        "name": "Duan Li",
+        "link": "https://paperswithcode.com/author/duan-li"
+      },
+      {
+        "id": "author_cf1c6f26",
+        "name": "Xinyuan Guo",
+        "link": "https://paperswithcode.com/author/xinyuan-guo"
+      },
+      {
+        "id": "author_e9caf2d8",
+        "name": "Bowen Li",
+        "link": "https://paperswithcode.com/author/bowen-li"
+      },
+      {
+        "id": "author_14e90a95",
+        "name": "Lanxi Xiao",
+        "link": "https://paperswithcode.com/author/lanxi-xiao"
+      },
+      {
+        "id": "author_c0d295ad",
+        "name": "Shenyu Qiao",
+        "link": "https://paperswithcode.com/author/shenyu-qiao"
+      },
+      {
+        "id": "author_83a8efa9",
+        "name": "Jiashu Chen",
+        "link": "https://paperswithcode.com/author/jiashu-chen"
+      },
+      {
+        "id": "author_c3adfb97",
+        "name": "Zijian Wu",
+        "link": "https://paperswithcode.com/author/zijian-wu"
+      },
+      {
+        "id": "author_f5110e20",
+        "name": "HUI ZHANG",
+        "link": "https://paperswithcode.com/author/hui-zhang"
+      },
+      {
+        "id": "author_f6109fe8",
+        "name": "Xinhuan Shu",
+        "link": "https://paperswithcode.com/author/xinhuan-shu"
+      },
+      {
+        "id": "author_dab7f0e4",
+        "name": "Shixia Liu",
+        "link": "https://paperswithcode.com/author/shixia-liu"
+      },
+      {
+        "id": "author_6bc73609",
+        "name": "Raman Dutt",
+        "link": "https://paperswithcode.com/author/raman-dutt"
+      },
+      {
+        "id": "author_bbb11ddb",
+        "name": "Pedro Sanchez",
+        "link": "https://paperswithcode.com/author/pedro-sanchez"
+      },
+      {
+        "id": "author_4b27e7e7",
+        "name": "Yongchen Yao",
+        "link": "https://paperswithcode.com/author/yongchen-yao"
+      },
+      {
+        "id": "author_49a7aca7",
+        "name": "Steven McDonagh",
+        "link": "https://paperswithcode.com/author/steven-mcdonagh"
+      },
+      {
+        "id": "author_f6bb5021",
+        "name": "Sotirios A. Tsaftaris",
+        "link": "https://paperswithcode.com/author/sotirios-a-tsaftaris"
+      },
+      {
+        "id": "author_4edd613e",
+        "name": "Timothy Hospedales",
+        "link": "https://paperswithcode.com/author/timothy-hospedales"
+      },
+      {
+        "id": "author_9d309ea6",
+        "name": "Shreya Shankar",
+        "link": "https://paperswithcode.com/author/shreya-shankar"
+      },
+      {
+        "id": "author_ddc17fb5",
+        "name": "Tristan Chambers",
+        "link": "https://paperswithcode.com/author/tristan-chambers"
+      },
+      {
+        "id": "author_b5b8233e",
+        "name": "Tarak Shah",
+        "link": "https://paperswithcode.com/author/tarak-shah"
+      },
+      {
+        "id": "author_a84ba163",
+        "name": "Aditya G. Parameswaran",
+        "link": "https://paperswithcode.com/author/aditya-g-parameswaran"
+      },
+      {
+        "id": "author_4bd623c6",
+        "name": "Eugene Wu",
+        "link": "https://paperswithcode.com/author/eugene-wu"
+      },
+      {
+        "id": "author_b5d9c3cb",
+        "name": "Haohan Chi",
+        "link": "https://paperswithcode.com/author/haohan-chi"
+      },
+      {
+        "id": "author_9bfa2599",
+        "name": "Huan-ang Gao",
+        "link": "https://paperswithcode.com/author/huan-ang-gao"
+      },
+      {
+        "id": "author_c6f7839c",
+        "name": "Ziming Liu",
+        "link": "https://paperswithcode.com/author/ziming-liu"
+      },
+      {
+        "id": "author_440d82cb",
+        "name": "Jianing Liu",
+        "link": "https://paperswithcode.com/author/jianing-liu"
+      },
+      {
+        "id": "author_13345fa6",
+        "name": "Chenyu Liu",
+        "link": "https://paperswithcode.com/author/chenyu-liu"
+      },
+      {
+        "id": "author_1606e9b6",
+        "name": "Jinwei Li",
+        "link": "https://paperswithcode.com/author/jinwei-li"
+      },
+      {
+        "id": "author_2467d516",
+        "name": "Kaisen Yang",
+        "link": "https://paperswithcode.com/author/kaisen-yang"
+      },
+      {
+        "id": "author_7b1f799b",
+        "name": "Yangcheng Yu",
+        "link": "https://paperswithcode.com/author/yangcheng-yu"
+      },
+      {
+        "id": "author_ee0b1568",
+        "name": "Zeda Wang",
+        "link": "https://paperswithcode.com/author/zeda-wang"
+      },
+      {
+        "id": "author_3ce0b8b1",
+        "name": "Wenyi Li",
+        "link": "https://paperswithcode.com/author/wenyi-li"
+      },
+      {
+        "id": "author_53028977",
+        "name": "Leichen Wang",
+        "link": "https://paperswithcode.com/author/leichen-wang"
+      },
+      {
+        "id": "author_d666fcbc",
+        "name": "Xingtao Hu",
+        "link": "https://paperswithcode.com/author/xingtao-hu"
+      },
+      {
+        "id": "author_eaa6e626",
+        "name": "Hao Sun",
+        "link": "https://paperswithcode.com/author/hao-sun"
+      },
+      {
+        "id": "author_57c409e2",
+        "name": "Hang Zhao",
+        "link": "https://paperswithcode.com/author/hang-zhao"
+      },
+      {
+        "id": "author_c6d82bb6",
+        "name": "Hao Zhao",
+        "link": "https://paperswithcode.com/author/hao-zhao"
+      },
+      {
+        "id": "author_a042c934",
+        "name": "Zeqian Ju",
+        "link": "https://paperswithcode.com/author/zeqian-ju"
+      },
+      {
+        "id": "author_59914286",
+        "name": "Dongchao Yang",
+        "link": "https://paperswithcode.com/author/dongchao-yang"
+      },
+      {
+        "id": "author_75603fde",
+        "name": "Jianwei Yu",
+        "link": "https://paperswithcode.com/author/jianwei-yu"
+      },
+      {
+        "id": "author_fc6b5156",
+        "name": "Kai Shen",
+        "link": "https://paperswithcode.com/author/kai-shen"
+      },
+      {
+        "id": "author_f86c1be1",
+        "name": "Yichong Leng",
+        "link": "https://paperswithcode.com/author/yichong-leng"
+      },
+      {
+        "id": "author_94c75f9f",
+        "name": "Zhengtao Wang",
+        "link": "https://paperswithcode.com/author/zhengtao-wang"
+      },
+      {
+        "id": "author_b7b56804",
+        "name": "Xu Tan",
+        "link": "https://paperswithcode.com/author/xu-tan"
+      },
+      {
+        "id": "author_bc91c90b",
+        "name": "Xinyu Zhou",
+        "link": "https://paperswithcode.com/author/xinyu-zhou"
+      },
+      {
+        "id": "author_781d660f",
+        "name": "Tao Qin",
+        "link": "https://paperswithcode.com/author/tao-qin"
+      },
+      {
+        "id": "author_57493c03",
+        "name": "Xiangyang Li",
+        "link": "https://paperswithcode.com/author/xiangyang-li"
+      },
+      {
+        "id": "author_75f14fe9",
+        "name": "Minju Seo",
+        "link": "https://paperswithcode.com/author/minju-seo"
+      },
+      {
+        "id": "author_c85ed802",
+        "name": "Jinheon Baek",
+        "link": "https://paperswithcode.com/author/jinheon-baek"
+      },
+      {
+        "id": "author_c0d0c2af",
+        "name": "Seongyun Lee",
+        "link": "https://paperswithcode.com/author/seongyun-lee"
+      },
+      {
+        "id": "author_4ac5d34b",
+        "name": "Sung Ju Hwang",
+        "link": "https://paperswithcode.com/author/sung-ju-hwang"
+      },
+      {
+        "id": "author_47408edf",
+        "name": "Xiren Zhou",
+        "link": "https://paperswithcode.com/author/xiren-zhou"
+      },
+      {
+        "id": "author_18375a3f",
+        "name": "Shikang Liu",
+        "link": "https://paperswithcode.com/author/shikang-liu"
+      },
+      {
+        "id": "author_ccbcd59a",
+        "name": "Xinyu Yan",
+        "link": "https://paperswithcode.com/author/xinyu-yan"
+      },
+      {
+        "id": "author_b8b70635",
+        "name": "Yizhan Fan",
+        "link": "https://paperswithcode.com/author/yizhan-fan"
+      },
+      {
+        "id": "author_1d1b7a9e",
+        "name": "Xiangyu Wang",
+        "link": "https://paperswithcode.com/author/xiangyu-wang"
+      },
+      {
+        "id": "author_ede2c2ce",
+        "name": "Yu Kang",
+        "link": "https://paperswithcode.com/author/yu-kang"
+      },
+      {
+        "id": "author_6b2399cc",
+        "name": "Jian Cheng",
+        "link": "https://paperswithcode.com/author/jian-cheng"
+      },
+      {
+        "id": "author_be3a2878",
+        "name": "Huanhuan Chen",
+        "link": "https://paperswithcode.com/author/huanhuan-chen"
+      },
+      {
+        "id": "author_1ee765b7",
+        "name": "Helin Wang",
+        "link": "https://paperswithcode.com/author/helin-wang"
+      },
+      {
+        "id": "author_cf055403",
+        "name": "Jiarui Hai",
+        "link": "https://paperswithcode.com/author/jiarui-hai"
+      },
+      {
+        "id": "author_28d508f4",
+        "name": "Chen Chen",
+        "link": "https://paperswithcode.com/author/chen-chen"
+      },
+      {
+        "id": "author_4f9f4b25",
+        "name": "Kai Li",
+        "link": "https://paperswithcode.com/author/kai-li"
+      },
+      {
+        "id": "author_6915c225",
+        "name": "Junyi Peng",
+        "link": "https://paperswithcode.com/author/junyi-peng"
+      },
+      {
+        "id": "author_0c4d9619",
+        "name": "Thomas Thebaud",
+        "link": "https://paperswithcode.com/author/thomas-thebaud"
+      },
+      {
+        "id": "author_a268ab09",
+        "name": "Laureano Moro Velazquez",
+        "link": "https://paperswithcode.com/author/laureano-moro-velazquez-2"
+      },
+      {
+        "id": "author_c6de42b5",
+        "name": "Jesus Villalba",
+        "link": "https://paperswithcode.com/author/jesus-villalba"
+      },
+      {
+        "id": "author_93eb93d5",
+        "name": "Najim Dehak",
+        "link": "https://paperswithcode.com/author/najim-dehak"
+      },
+      {
+        "id": "author_aac1dfb0",
+        "name": "Jialong Wu",
+        "link": "https://paperswithcode.com/author/jialong-wu"
+      },
+      {
+        "id": "author_655a1512",
+        "name": "Baixuan Li",
+        "link": "https://paperswithcode.com/author/baixuan-li"
+      },
+      {
+        "id": "author_fa5692d8",
+        "name": "Runnan Fang",
+        "link": "https://paperswithcode.com/author/runnan-fang"
+      },
+      {
+        "id": "author_7a426fb5",
+        "name": "Wenbiao Yin",
+        "link": "https://paperswithcode.com/author/wenbiao-yin"
+      },
+      {
+        "id": "author_f94985aa",
+        "name": "Liwen Zhang",
+        "link": "https://paperswithcode.com/author/liwen-zhang"
+      },
+      {
+        "id": "author_bbf93b91",
+        "name": "Zhengwei Tao",
+        "link": "https://paperswithcode.com/author/zhengwei-tao"
+      },
+      {
+        "id": "author_3f57807f",
+        "name": "Dingchu Zhang",
+        "link": "https://paperswithcode.com/author/dingchu-zhang"
+      },
+      {
+        "id": "author_34fb5b8e",
+        "name": "Zekun Xi",
+        "link": "https://paperswithcode.com/author/zekun-xi"
+      },
+      {
+        "id": "author_c2e316b4",
+        "name": "Yong Jiang",
+        "link": "https://paperswithcode.com/author/yong-jiang"
+      },
+      {
+        "id": "author_be7f9e4b",
+        "name": "Pengjun Xie",
+        "link": "https://paperswithcode.com/author/pengjun-xie"
+      },
+      {
+        "id": "author_9abadeb1",
+        "name": "Fei Huang",
+        "link": "https://paperswithcode.com/author/fei-huang"
+      },
+      {
+        "id": "author_d171dbe8",
+        "name": "Jingren Zhou",
+        "link": "https://paperswithcode.com/author/jingren-zhou"
+      }
+    ],
+    "chunks": []
+  },
+  "relationships": [
+    {
+      "from": "paper_d68e3573",
+      "to": "code_8a642a6b",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_d68e3573",
+      "to": "code_9e8f235d",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_d68e3573",
+      "to": "task_7ebedea2",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_d68e3573",
+      "to": "task_7542dc7e",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_d68e3573",
+      "to": "task_0c3cb236",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "author_92f9a03f",
+      "to": "paper_d68e3573",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_2b0d34eb",
+      "to": "paper_d68e3573",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_5a03e69a",
+      "to": "paper_d68e3573",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "code_d39ad669",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "code_27fab4dc",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "code_990e3c03",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "dataset_105536f8",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "task_a8d7e740",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "task_39de6f55",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "task_c1428964",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_21bea824",
+      "to": "task_5ae98149",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "author_6caff28d",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_978b8c1b",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_7fd66009",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_cf1c6f26",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_e9caf2d8",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_14e90a95",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c0d295ad",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_83a8efa9",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c3adfb97",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_f5110e20",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_f6109fe8",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_dab7f0e4",
+      "to": "paper_21bea824",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_5e5c730a",
+      "to": "code_036798f3",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_5e5c730a",
+      "to": "dataset_f58d3dbb",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_5e5c730a",
+      "to": "dataset_9aa6eadd",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_5e5c730a",
+      "to": "task_88295b71",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "author_6bc73609",
+      "to": "paper_5e5c730a",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_bbb11ddb",
+      "to": "paper_5e5c730a",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_4b27e7e7",
+      "to": "paper_5e5c730a",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_49a7aca7",
+      "to": "paper_5e5c730a",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_f6bb5021",
+      "to": "paper_5e5c730a",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_4edd613e",
+      "to": "paper_5e5c730a",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_79c0b994",
+      "to": "code_71a49c7b",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_79c0b994",
+      "to": "method_1818d506",
+      "type": "USES_METHOD"
+    },
+    {
+      "from": "author_9d309ea6",
+      "to": "paper_79c0b994",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_ddc17fb5",
+      "to": "paper_79c0b994",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_b5b8233e",
+      "to": "paper_79c0b994",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_a84ba163",
+      "to": "paper_79c0b994",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_4bd623c6",
+      "to": "paper_79c0b994",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "code_bd864353",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "dataset_374bc60c",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "dataset_57ee7bf5",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "dataset_48f4c416",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "dataset_e2eff6c2",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "task_41858ee9",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "task_1b241505",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "task_84338875",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "task_003a4287",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_d6e07d85",
+      "to": "task_10d8cac5",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "author_b5d9c3cb",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_9bfa2599",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c6f7839c",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_440d82cb",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_13345fa6",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_1606e9b6",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_2467d516",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_7b1f799b",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_ee0b1568",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_3ce0b8b1",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_53028977",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_d666fcbc",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_eaa6e626",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_57c409e2",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c6d82bb6",
+      "to": "paper_d6e07d85",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "code_6e1a77ad",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "task_c1c6bb6d",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "task_38b1fb3e",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "task_4a1a9cdc",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "task_6b15bc7b",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "method_8d0b6717",
+      "type": "USES_METHOD"
+    },
+    {
+      "from": "paper_46e0cb48",
+      "to": "method_572d4e42",
+      "type": "USES_METHOD"
+    },
+    {
+      "from": "author_a042c934",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_59914286",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_75603fde",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_fc6b5156",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_f86c1be1",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_94c75f9f",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_b7b56804",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_bc91c90b",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_781d660f",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_57493c03",
+      "to": "paper_46e0cb48",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_c4ff01ad",
+      "to": "code_9f8c5b0b",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_c4ff01ad",
+      "to": "task_c1428964",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_c4ff01ad",
+      "to": "method_cdaeeeba",
+      "type": "USES_METHOD"
+    },
+    {
+      "from": "author_75f14fe9",
+      "to": "paper_c4ff01ad",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c85ed802",
+      "to": "paper_c4ff01ad",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c0d0c2af",
+      "to": "paper_c4ff01ad",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_4ac5d34b",
+      "to": "paper_c4ff01ad",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_dd341e3b",
+      "to": "code_7c234536",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_dd341e3b",
+      "to": "task_a034a8fd",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_dd341e3b",
+      "to": "task_ebad1f7d",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_dd341e3b",
+      "to": "task_20f35e63",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "author_47408edf",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_18375a3f",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_ccbcd59a",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_b8b70635",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_1d1b7a9e",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_ede2c2ce",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_6b2399cc",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_be3a2878",
+      "to": "paper_dd341e3b",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "code_a11a7e54",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "dataset_6a8efccb",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "dataset_3c2df79b",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "dataset_924a6e61",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "dataset_e2abd049",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "dataset_61f4f34b",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "task_0f06320d",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "paper_ab18e24f",
+      "to": "task_336010cb",
+      "type": "ADDRESSES_TASK"
+    },
+    {
+      "from": "author_1ee765b7",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_cf055403",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_59914286",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_28d508f4",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_4f9f4b25",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_6915c225",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_0c4d9619",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_a268ab09",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c6de42b5",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_93eb93d5",
+      "to": "paper_ab18e24f",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "paper_b364d6cc",
+      "to": "code_bb19c52b",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_b364d6cc",
+      "to": "code_06ad686f",
+      "type": "HAS_CODE"
+    },
+    {
+      "from": "paper_b364d6cc",
+      "to": "dataset_fa44835d",
+      "type": "USES_DATASET"
+    },
+    {
+      "from": "author_aac1dfb0",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_655a1512",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_fa5692d8",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_7a426fb5",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_f94985aa",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_bbf93b91",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_3f57807f",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_34fb5b8e",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_c2e316b4",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_be7f9e4b",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_9abadeb1",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    },
+    {
+      "from": "author_d171dbe8",
+      "to": "paper_b364d6cc",
+      "type": "AUTHORED"
+    }
+  ],
+  "metadata": {
+    "total_papers": 10,
+    "total_codes": 14,
+    "total_datasets": 13,
+    "total_tasks": 22,
+    "total_methods": 4,
+    "total_authors": 84,
+    "total_chunks": 0,
+    "total_relationships": 139,
+    "extracted_at": "2025-06-10T13:19:15.620759"
+  }
+}
