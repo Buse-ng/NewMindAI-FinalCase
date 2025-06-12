@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-header {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.chat-message {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 1px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.user-message {
+    border-left: 5px solid #2e86de;
+}
+
+.bot-message {
+    border-left: 5px solidrgb(191, 228, 206);
+}
+
+/* Açık tema */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    .main-header {
+        color: #333;
+    }
+
+    .chat-message {
+        background-color: #fff;
+        border-color: #e0e0e0;
+    }
+
+    .bot-message {
+        /* background-color: #f2fff5; */
+        background-color:rgb(162, 215, 219);
+    }
+}
+
+/* Koyu tema */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #eaeaea;
+    }
+
+    .main-header {
+        color: #f0f0f0;
+    }
+
+    .chat-message {
+        background-color: #2a2a2a;
+        border-color: #444;
+    }
+
+    .bot-message {
+        /* background-color:rgb(26, 29, 125); */
+        color: #2a2a2a;
+        background-color:rgb(194, 199, 209);
+    }
+}
