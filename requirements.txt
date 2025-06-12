@@ -1,9 +1,13 @@
 langchain
+langchain-core
+langchain-groq
+langchain-neo4j
+langchain-openai
 langchain-community
 langchain-experimental
 sentence-transformers
-torch
 transformers
+torch
 
 # PDF için
 PyMuPDF
@@ -16,5 +20,6 @@ beautifulsoup4
 # Web scraping
 urllib3
 
-
 streamlit
+
+python-dotenv
