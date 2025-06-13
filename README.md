@@ -10,6 +10,11 @@ This project aims to tackle the increasing difficulty of staying up-to-date with
 
 ---
 
+
+https://github.com/user-attachments/assets/57ada060-a195-43fc-84e8-2eff40122ccc
+
+
+
 ## 🚀 Features
 
 - 📄 Web scraping of AI research papers from PapersWithCode
