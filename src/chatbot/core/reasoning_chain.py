@@ -20,12 +20,11 @@ class ReasoningCypherChain:
                     question=x["query"]
                 )
             )
-            # | (lambda x: {"query": x["query"], "formatted_prompt": x["formatted_prompt"]})
             | RunnablePassthrough.assign(
                 cypher_response=lambda x: self.llm.invoke([{"role": "user", "content": x["formatted_prompt"]}]).content
             )
             | RunnablePassthrough.assign(
-                cleaned_cypher=lambda x: clean_query(x["cypher_response"]) #self.clean_query?
+                cleaned_cypher=lambda x: clean_query(x["cypher_response"])
             )
         )
 
@@ -44,7 +43,7 @@ class ReasoningCypherChain:
                 qa_response=lambda x: self.llm.invoke([{"role": "user", "content": x["qa_prompt"]}]).content
             )
             | RunnablePassthrough.assign(
-                cleaned_response=lambda x: clean_response(x["qa_response"]) #self.clean_response?
+                cleaned_response=lambda x: clean_response(x["qa_response"]) 
             )
         )
 
@@ -76,8 +75,5 @@ class ReasoningCypherChain:
             "intermediate_steps": [
                 {"query": final_result["cleaned_cypher"]},
                 {"context": final_result["neo4j_results"]}
-                
-                # {"query": cypher_result["cleaned_cypher"]},
-                # {"context": neo4j_result["neo4j_results"]}
             ]
         }

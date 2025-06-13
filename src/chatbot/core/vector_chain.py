@@ -90,19 +90,13 @@ class VectorSearchChain:
                 except Exception as e:
                     logger.error(f"Retriever hatası: {str(e)}")
                     return []
-
-            # def invoke(self, query, k=10):
-            #     return self.get_relevant_documents(query, k)
-
+            
         return CustomRetriever(self.vector_store, self.graph, self.verbose)
 
 
     def invoke(self, inputs):
         query = inputs.get("query", "")
-        try:
-            # if self.verbose:
-            #     logger.info(f"VectorSearchChain: Bulunan döküman sayısı: {len(relevant_docs)}")
-                            
+        try:              
             relevant_docs = self.retriever.get_relevant_documents(query, k=5)
             context_parts = []
             source_docs = []
@@ -119,8 +113,7 @@ class VectorSearchChain:
                     İçerik: {doc.page_content}
                 ---
                 """)
-                # logger.info(f"Context part: {context_part}")
-                # context_parts.append(context_part)                
+          
                 source_docs.append({
                     "paper_name": metadata.get("paper_name", ""),
                     "authors": metadata.get("authors", ""),
@@ -135,16 +128,11 @@ class VectorSearchChain:
 
             full_context = "\n".join(context_parts)
             prompt_text = self.response_prompt.format(query=query, context=full_context)
-            # if self.verbose:
-            #     logger.info(f"LLM'e gönderilen prompt: {prompt_text[:500]}...")
-                
+
             llm_response = self.llm.invoke([{"role": "user", "content": prompt_text}])
             
             answer = getattr(llm_response, 'content', str(llm_response))
-            
-            # if self.verbose:
-            #     logger.info(f"VectorSearchChain: LLM yanıtı alındı")
-        
+     
             return {
                 "result": answer,
                 "intermediate_steps": [

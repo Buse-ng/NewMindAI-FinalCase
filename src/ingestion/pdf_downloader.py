@@ -4,7 +4,6 @@ import os
 import sys
 from pathlib import Path
 
-# settings.py'ı import et
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from src.config.settings import PDF_DIR
 

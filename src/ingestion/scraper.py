@@ -1,12 +1,9 @@
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 import hashlib
 from datetime import datetime
 from typing import Dict, List, Any
-import requests
 import re
 import json
-import os
 
 class PapersWithCodeScraper:
     def __init__(self):
@@ -170,12 +167,9 @@ class PapersWithCodeScraper:
         if not implementations:
             return codes
 
-        #! full list ile alınca 2 kere yazıyor
         code_rows = implementations.select('#implementations-short-list .row')
 
         for row in code_rows:
-            # GitHub bağlantısı
-            # link_elem = row.select_one('.col-sm-7 .paper-impl-cell a.code-table-link') 
             link_elem = row.select_one('.paper-impl-cell a.code-table-link')
             if not link_elem or 'href' not in link_elem.attrs:
                 continue
@@ -184,8 +178,6 @@ class PapersWithCodeScraper:
             if 'github.com' not in href:
                 continue
 
-            # Repo adı
-            # repo_name = link_elem.get_text(strip=True) #!o divdeki tum metinleri aldi sil
             repo_name = ''.join([t for t in link_elem.contents if isinstance(t, str)]).strip()
 
             star_icon = row.select_one('.col-3 .paper-impl-cell span[data-name="star"]')

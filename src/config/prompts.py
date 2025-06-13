@@ -23,7 +23,8 @@ cypher_prompt = PromptTemplate(
                 7. LIMIT clause ekleyerek sonuçları sınırla
                 8. Node ile ilgili bilgileri döndürürken tüm attribute'larını döndür. 
                 9. RETURN p.* gibi komutlar kullanma, attribute'ların tamamını döndür.
-                
+                10. Sadece Cypher query'si döndür. Kod bloğu, ```cypher``` ya da herhangi bir ``` sembolü kullanma. Sadece düz metin olarak döndür.
+
                 Örnek Sorular ve Cypher Queries:
                 
                 Soru: "Transformer yöntemi kullanan makaleler neler?"
@@ -55,7 +56,7 @@ cypher_prompt = PromptTemplate(
                 Kullanıcı Sorusu: {question}
                 
                 Sadece Cypher query'si döndür, başka açıklama yapma:
-                """,
+                """
 )
 
 qa_prompt = PromptTemplate(

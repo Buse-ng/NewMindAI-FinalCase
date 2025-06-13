@@ -1,11 +1,5 @@
 from langchain_experimental.text_splitter import SemanticChunker
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
-import numpy as np
-import torch
-import fitz  # PyMuPDF
-import os
 
 class LocalChunker:
     """
@@ -18,7 +12,7 @@ class LocalChunker:
         Chunker sınıfı başlatma
         
         Args:
-            embeddings: Embedding modeli (HuggingFaceEmbeddings gibi)
+            embeddings: Embedding modeli 
             chunk_size: Her chunk'ın maksimum boyutu
         """
         self.embeddings = embeddings

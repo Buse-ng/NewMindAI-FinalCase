@@ -14,7 +14,7 @@ def clean_text(text, is_cypher=False):
         end_index = text.find("</think>") + len("</think>")
         text = text[:start_index] + text[end_index:]
         if not is_cypher and "<think>" in text:
-            return clean_text(text, is_cypher) #TODO: onceki hali aşağıdaki gibi.
+            return clean_text(text, is_cypher)
     
     if is_cypher:
             lines = text.strip().split('\n')

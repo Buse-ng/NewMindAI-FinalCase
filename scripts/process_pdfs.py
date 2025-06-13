@@ -1,15 +1,13 @@
 import json
 import sys
 import os
-from pathlib import Path
 
-# Projenin kök dizinini sys.path'e ekle
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Gerekli modüllerin importu 
 from src.config.settings import PAPERS_JSON, PDF_DIR, PROCESSED_DATA_DIR
-from src.chatbot.ingestion.chunker import LocalChunker
-from src.chatbot.ingestion.pdf_downloader import PDFDownloader
+from src.ingestion.chunker import LocalChunker
+from src.ingestion.pdf_downloader import PDFDownloader
 from langchain_community.embeddings import HuggingFaceEmbeddings
 import torch
 
@@ -39,7 +37,7 @@ def process_pdfs():
     )
     print(f"✅ Embedding modeli yüklendi: {model_name}")
 
-    # PDF downloader ve chunkerı oluştur
+    # PDF downloader ve chunker
     pdf_downloader = PDFDownloader(PDF_DIR)
     chunker = LocalChunker(embeddings)
 

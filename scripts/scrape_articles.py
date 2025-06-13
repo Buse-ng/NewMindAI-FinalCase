@@ -1,17 +1,12 @@
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-import hashlib
-from datetime import datetime
-from typing import Dict, List, Any
 import requests
-import re
-import json
 import os
 import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.config.settings import PAPERS_JSON, RAW_DATA_DIR
-from src.chatbot.ingestion.scraper import PapersWithCodeScraper
+from src.ingestion.scraper import PapersWithCodeScraper
 
 def main():
     print("🚀 PapersWithCode veri toplama işlemi başlatılıyor...")

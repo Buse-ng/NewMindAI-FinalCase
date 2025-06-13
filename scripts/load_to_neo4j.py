@@ -2,14 +2,12 @@ import json
 from typing import Dict, List, Any
 import os
 import sys
-from datetime import datetime
 from pathlib import Path
 from langchain_neo4j import Neo4jGraph
-import numpy as np
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.config.settings import PAPERS_JSON, PROCESSED_DATA_DIR, PROCESSED_PAPERS_JSON
+from src.config.settings import PROCESSED_PAPERS_JSON
 
 class Neo4jLoader:
     def __init__(self, uri: str, user: str, password: str):
@@ -129,7 +127,7 @@ class Neo4jLoader:
             chunk_data = {
                 'id': chunk['id'],
                 'text': chunk['text'],
-                'embedding': chunk['embedding'],  # Doğrudan numpy array olarak gönder
+                'embedding': chunk['embedding'],
                 'order': chunk.get('order', 0)
             }
             self.graph.query(query, params=chunk_data)

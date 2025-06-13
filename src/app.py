@@ -12,9 +12,6 @@ with open("src/chatbot/assets/styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.markdown('<h1 class="main-header">🤖 AI/ML Research Assistant</h1>', unsafe_allow_html=True)
-# st.markdown('<h1 class="main-header">👩‍💻 👩💻 AI/ML Research Assistant</h1>', unsafe_allow_html=True)
-# st.markdown('<h1 class="main-header">📚🔍  AI/ML Research Assistant</h1>', unsafe_allow_html=True)
-
 
 # Sidebar Ayarları
 with st.sidebar:
@@ -50,14 +47,7 @@ with st.sidebar:
         model_options,
         help="Kullanmak istediğiniz modeli seçin"
     )
-    #TODO: Bu kısımda search_type'a gore kontrol vardı
-    # model_name = st.selectbox(
-    #     "Model Seçimi:",
-    #     ["gpt-4.1-nano-2025-04-14", "llama3-70b-8192", "llama-3.3-70b-versatile", "gemma2-9b-it"],
-    #     help="Kullanmak istediğiniz modeli seçin"
-    # )
     llm_provider = "OpenAI" if model_name == "gpt-4.1-nano-2025-04-14" else "Groq"
-
 
     temperature = st.slider(
         "Temperature:",
@@ -120,16 +110,13 @@ if "initialized" not in st.session_state:
 if chatbot_needs_reset(llm_provider, model_name, temperature, search_type):
     initialize_chatbot_session(llm_provider, model_name, temperature, search_type)
     st.session_state.messages = []
-    # TODO: KONTROL ET
     if search_type == "Reasoning":
-        # st.info(f"Reasoning arama tipi seçildi. Otomatik olarak qwen-qwq-32b modeli kullanılacak.")
         st.info(f"Akıllı arama (Reasoning) seçildi. Seçtiğiniz {model_name} modeli kullanılacak.")
     elif search_type == "Vector Search":
         st.info(f"Vektör tabanlı arama seçildi. Semantik arama için SentenceTransformer embedding modeli kullanılacak. Seçtiğiniz {model_name} modeli ise sonuçları işleyecektir.")
     else:
         st.info(f"LLM ayarları değiştirildi. Sağlayıcı: {llm_provider}, Model: {model_name}, Temperature: {temperature}")
 
-# Chat Geçmişi
 for msg in st.session_state.messages:
     role = msg["role"]
     content = msg["content"]

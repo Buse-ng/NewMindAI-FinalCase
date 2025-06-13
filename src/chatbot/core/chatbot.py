@@ -37,10 +37,6 @@ class AIMLChatbot:
         elif llm_provider == "Groq" and not self.groq_api_key:
             raise ValueError("GROQ_API_KEY bulunamadı. Lütfen .env dosyasını kontrol edin.")
 
-        # if self.search_type == "Reasoning":
-        #     self.model_name = "qwen-qwq-32b"
-        #     self.llm_provider = "Groq"
-
         self.initialize_connections()
 
     def initialize_connections(self):

@@ -43,7 +43,6 @@ body {
     }
 
     .bot-message {
-        /* background-color: #f2fff5; */
         background-color:rgb(162, 215, 219);
     }
 }
@@ -65,8 +64,7 @@ body {
     }
 
     .bot-message {
-        /* background-color:rgb(26, 29, 125); */
-        color: #2a2a2a;
-        background-color:rgb(194, 199, 209);
+        background-color: #2a2a2a;
+        border-color: #444;
     }
 }
